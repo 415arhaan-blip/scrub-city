@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Detail | Scrub City Car Detailing</title>
+<meta name="description" content="Book your car detailing appointment with Scrub City. Serving San Francisco and Daly City. Call or text (415) 361-3549 or (415) 518-6769.">
+<link rel="icon" href="images/logo-round.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo-wide.webp" alt="Scrub City Car Detailing logo">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:4153613549" class="btn btn-outline btn-sm">Call Now</a>
+      <a href="booking.html" class="btn btn-primary btn-sm"><span class="long">Book </span>Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Book Your Detail</h1>
+    <p>Fill out the form and we'll confirm your appointment — or just call/text us directly for the fastest response.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="notice">
+      <div class="notice-icon">🔌</div>
+      <p><strong>Please note:</strong> we bring our own equipment, but need access to a working power outlet in your garage or outside your house to plug in our machines. Please make sure one is accessible before your appointment.</p>
+    </div>
+    <div class="booking-layout">
+
+      <div class="form-card">
+        <form id="bookingForm">
+          <div class="form-row two">
+            <div>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Smith">
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(415) 555-0123">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="vehicle">Vehicle (Year, Make, Model)</label>
+            <input type="text" id="vehicle" name="vehicle" required placeholder="2019 Honda Civic">
+          </div>
+
+          <div class="form-row">
+            <label>Package</label>
+            <div class="radio-group">
+              <label class="radio-pill"><input type="radio" name="package" value="Basic Wash" checked>Basic Wash</label>
+              <label class="radio-pill"><input type="radio" name="package" value="Full Detail">Full Detail</label>
+              <label class="radio-pill"><input type="radio" name="package" value="Deep Clean">Deep Clean</label>
+            </div>
+          </div>
+
+          <div class="form-row two">
+            <div>
+              <label for="location">Preferred Location</label>
+              <select id="location" name="location" required>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Daly City">Daly City</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Preferred Date &amp; Time</label>
+              <input type="datetime-local" id="date" name="date" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="notes">Notes (address, gate code, vehicle condition, etc.)</label>
+            <textarea id="notes" name="notes" placeholder="Anything we should know before we arrive?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Submit Booking Request</button>
+          <p class="form-note">We'll text or call to confirm your final time &amp; pricing.</p>
+          <div id="formStatus"></div>
+        </form>
+      </div>
+
+      <div>
+        <div class="side-card">
+          <h4>Prefer to talk to a person?</h4>
+          <div class="contact-line"><span class="lbl">Call/Text</span><a href="tel:4153613549">(415) 361-3549</a></div>
+          <div class="contact-line"><span class="lbl">Call/Text</span><a href="tel:4155186769">(415) 518-6769</a></div>
+          <div class="contact-line"><span class="lbl">Email</span><a href="mailto:misterarcanium@gmail.com">misterarcanium@gmail.com</a></div>
+        </div>
+        <div class="side-card">
+          <h4>Service Area</h4>
+          <p style="color:var(--muted);font-size:14.5px;">We serve all of San Francisco and Daly City. Mobile appointments come to your home or office — or ask about shop drop-off.</p>
+        </div>
+        <div class="side-card">
+          <h4>Hours</h4>
+          <div class="contact-line"><span class="lbl">Mon–Sat</span> 8:00 AM – 6:00 PM</div>
+          <div class="contact-line"><span class="lbl">Sunday</span> By appointment</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo-wide.webp" alt="Scrub City Car Detailing">
+        <p>Premium mobile &amp; shop car detailing serving San Francisco and Daly City.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book a Detail</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:4153613549">(415) 361-3549</a></li>
+          <li><a href="tel:4155186769">(415) 518-6769</a></li>
+          <li><a href="mailto:misterarcanium@gmail.com">misterarcanium@gmail.com</a></li>
+          <li>San Francisco &amp; Daly City, CA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Scrub City Car Detailing. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
